@@ -3,10 +3,12 @@ package homework2;
 public class AutoOverriding {
 	private int a;
 	private int b;
+
 	@Override
 	public String toString() {
 		return "AutoOverriding [a=" + a + ", b=" + b + "]";
 	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -15,6 +17,7 @@ public class AutoOverriding {
 		result = prime * result + b;
 		return result;
 	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -30,15 +33,19 @@ public class AutoOverriding {
 			return false;
 		return true;
 	}
+
 	public final int getA() {
 		return a;
 	}
+
 	public final void setA(int a) {
 		this.a = a;
 	}
+
 	public final int getB() {
 		return b;
 	}
+
 	public final void setB(int b) {
 		this.b = b;
 	}

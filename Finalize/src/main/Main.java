@@ -8,11 +8,10 @@ public class Main {
 		int x = f.x;
 		x++;
 		Test t = new Test();
-		f=t;
+		f = t;
 		int y = f.x;
 		System.gc();
-		System.out.println(x);
-		System.out.println(y);
+
 	}
 
 }

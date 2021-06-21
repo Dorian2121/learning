@@ -3,34 +3,43 @@ package main;
 import java.util.List;
 
 public class Customer {
-	private  double quantityOfMoney;
+	private double quantityOfMoney;
+
+	private List<Product> purchasedGoods;
+	private List<Product> basket;
+
+
+
 	
-	private  List<Product> purchasedGoods;
-	private  List<Product> basket;
-	public Customer(double quantityOfMoney, List<Product> purchasedGoods, List<Product> basket) {
-		super();
+
+	public Customer(double quantityOfMoney) {
 		this.quantityOfMoney = quantityOfMoney;
-		this.purchasedGoods = purchasedGoods;
-		this.basket = basket;
 	}
+
 	public final double getQuantityOfMoney() {
 		return quantityOfMoney;
 	}
+
 	public final void setQuantityOfMoney(double quantityOfMoney) {
 		this.quantityOfMoney = quantityOfMoney;
 	}
+
 	public final List<Product> getPurchasedGoods() {
 		return purchasedGoods;
 	}
+
 	public final void setPurchasedGoods(List<Product> purchasedGoods) {
 		this.purchasedGoods = purchasedGoods;
 	}
+
 	public final List<Product> getBasket() {
 		return basket;
 	}
+
 	public final void setBasket(List<Product> basket) {
 		this.basket = basket;
 	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -42,6 +51,7 @@ public class Customer {
 		result = prime * result + (int) (temp ^ (temp >>> 32));
 		return result;
 	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -65,6 +75,7 @@ public class Customer {
 			return false;
 		return true;
 	}
+
 	@Override
 	public String toString() {
 		return "Customer [quantityOfMoney=" + quantityOfMoney + ", purchasedGoods=" + purchasedGoods + ", basket="

@@ -16,10 +16,12 @@ grocery.addProduct("Bread",new Product(23, 0.99, "Bread"));
 		customer.getBasket().add(product);
 	 product.setQuantity(product.getQuantity()-1);
 	}
+	public void deleteFromBasket() Customer customer,Product product
 	public void buy(Customer customer, Product product) {
 		if (customer.getQuantityOfMoney()<calculateSumm(customer.getBasket())) {
 			throw new IllegalArgumentException("Not Enough Money");
-		} customer.setQuantityOfMoney(customer.getQuantityOfMoney()-calculateSumm(customer.getBasket()));
+		}
+		customer.setQuantityOfMoney(customer.getQuantityOfMoney()-calculateSumm(customer.getBasket()));
 		customer.setPurchasedGoods(customer.getBasket());
 		customer.getBasket().clear();
 		

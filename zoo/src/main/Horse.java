@@ -1,8 +1,8 @@
 package main;
 
 public class Horse extends Animal{
-	public Horse(String voice) {
-		super(voice);
+	public Horse(String action) {
+		super(action);
 		
 	}
 

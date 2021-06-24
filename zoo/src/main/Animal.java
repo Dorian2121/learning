@@ -1,12 +1,12 @@
 package main;
 
 public class Animal {
-String voice;
+String action;
 	public Animal(String voice) {
-	this.voice = voice;
+	this.action = voice;
 }
 	public void feed() {
-		System.out.println(voice);
+		System.out.println(action);
 	}
 	
 

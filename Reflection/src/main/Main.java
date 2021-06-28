@@ -8,10 +8,10 @@ public class Main {
 	Restoring restoring = new Restoring();
 	Hack hack = new Hack();
   
-	System.out.println(	restoring.restoreClassMetainf(stringClass.getClass()));
-	
+//	System.out.println(	restoring.restoreClassMetainf(stringClass.getClass()));
+//	System.out.println(stringClass.getFields());
 hack.hackTheObject(stringClass);
-stringClass.print();
+System.out.println(stringClass.getFields());
 	}
 	
 }

@@ -10,8 +10,13 @@ public class StringClass {
 	public StringClass() {
 	}
 
-	public void print() {
-		System.out.println(one+" "+two+" "+three+" " +four);
+	public String getFields() {
+		StringBuilder sb = new StringBuilder();
+		sb.append(one + "\n");
+		sb.append(two + "\n");
+		sb.append(three + "\n");
+		sb.append(four + "\n");
+				return sb.toString();
 	}
 
 }

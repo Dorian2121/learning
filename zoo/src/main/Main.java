@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Main {
+	static int ticketCounter = 0;
 	public static  Map <String, Animal> animals;
 
 	public static void main(String[] args) {
@@ -25,7 +26,7 @@ public class Main {
 		animals.put("Chimpanzee",new Ñhimpanzee("Coding on javascript"));
 	}
 	public static Ticket buyTicket(Customer customer) {
-		int ticketCounter = 0;
+		
 		if (customer.getMoney()>=Ticket.cost) {
 			customer.setMoney(customer.getMoney()-Ticket.cost);
 			ticketCounter++;

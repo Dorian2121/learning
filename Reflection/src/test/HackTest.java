@@ -9,9 +9,7 @@ import main.StringClass;
 
 class HackTest {
 
-	
-
-		@Test
+@Test
 		void ShouldChangeStringsInClassTheClass() {
 			Hack hack = new Hack();
 			StringClass actual 	= new StringClass();

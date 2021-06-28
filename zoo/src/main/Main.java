@@ -7,7 +7,7 @@ public class Main {
 	public static  Map <String, Animal> animals;
 
 	public static void main(String[] args) {
-		Customer customer = new Customer(25.00);
+		Customer customer = new Customer(1.00);
    customer.setTicket(buyTicket(customer));
    addAnimals();
    if (customer.checkTicket()) {
@@ -32,7 +32,7 @@ public class Main {
 			return new Ticket(ticketCounter);
 			
 		}else {
-			throw new IllegalArgumentException("Not enough money");
+			throw new NoSuchMoneyException();
 		}
 	}
 	public static void feedTheAnimal(String animal) {
@@ -43,4 +43,6 @@ public class Main {
 		animals.entrySet().stream().forEach(a -> a.getValue().feed());
 		
 	}
+
+ 
 }
